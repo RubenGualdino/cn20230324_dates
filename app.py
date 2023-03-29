@@ -9,6 +9,7 @@ app = Flask(__name__)
 HTML_NAME_FOR_THE_DATE = "d"
 
 @app.route("/distance", methods=['POST'])
+
 def respond_to_distance_request():
     the_user_date:str=request.form[HTML_NAME_FOR_THE_DATE]
 
